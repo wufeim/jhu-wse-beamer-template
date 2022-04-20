@@ -1,69 +1,5 @@
 \documentclass[10pt,aspectratio=169]{beamer}
-\usetheme{Boadilla}
-\setbeamercolor{title}{fg=white}
-\setbeamercolor{frametitle}{fg=jhu-dark}
-\setbeamercolor{sidebar}{bg=white}
-\setbeamersize{sidebar width left=12mm,sidebar width right=12mm}
-\setbeamercolor*{palette primary}{use=structure,fg=white,bg=jhu-dark}
-\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=jhu-medium}
-\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=jhu-light}
-\setbeamercolor*{palette quaternary}{fg=white,bg=LightBlue}
-\addtobeamertemplate{frametitle}{\vspace*{0.2cm}}{\vspace*{0.2cm}}
-\setbeamertemplate{caption}[numbered]
-\setbeamertemplate{itemize item}{\textcolor{jhu-light}{\small$\blacksquare$}}
-\setbeamertemplate{itemize subitem}{\textcolor{jhu-light}{\large$\bullet$}}
-\setbeamertemplate{itemize subsubitem}{\textcolor{jhu-light}{\large$\circ$}}
-\setbeamertemplate{itemize/enumerate body begin}{\normalsize}
-\setbeamertemplate{itemize/enumerate subbody begin}{\normalsize}
-\setbeamertemplate{itemize/enumerate subsubbody begin}{\normalsize}
-
-\usefonttheme{serif}
-\usepackage{amsmath,amsthm,amssymb,amsfonts}
-\usepackage[T1]{fontenc}
-\usepackage{mathpazo}
-\usepackage{euler}
-\usepackage{xcolor}
-\usepackage{caption}
-\usepackage{subcaption}
-\usepackage{graphicx,animate}
-\definecolor{LightBlue}{RGB}{147, 213, 220}
-\definecolor{DarkBlue}{RGB}{39, 117, 182}
-\definecolor{LightGray}{gray}{.94}
-\definecolor{DarkGray}{gray}{.172}
-\definecolor{Orange}{RGB}{229, 133, 3}
-\definecolor{MediumBlue}{RGB}{47, 144, 185}
-\definecolor{lnl-yellow}{RGB}{251, 248, 225}
-\definecolor{lnl-latte}{RGB}{187, 162, 130}
-\definecolor{jhu-light}{RGB}{104, 172, 229}
-\definecolor{jhu-medium}{RGB}{52, 108, 171}
-\definecolor{jhu-dark}{RGB}{0, 45, 114}
-\newcommand{\textitb}[1]{\textit{\textcolor{jhu-dark}{#1}}}
-\newcommand{\textbfb}[1]{\textbf{\textcolor{jhu-dark}{#1}}}
-\renewcommand{\figurename}{Fig}
-\DeclareCaptionFormat{smalltext}{\fontsize{8}{9.6}\selectfont#1#2#3}
-\captionsetup{format=smalltext,labelfont={color=DarkBlue}}
-
-% title page style
-\setbeamertemplate{title page}{%
-\fontsize{8pt}{9.6}\selectfont
-\vspace{1.5in}
-{\textcolor{white}{\huge\textbf{\inserttitle}}}
-
-\vspace{.2in}
-
-{\textcolor{white}{\large \insertauthor}} \\ {\textcolor{white}{\large \insertinstitute}}
-}
-
-% enumerate list style
-\setbeamertemplate{enumerate items}[default]
-\setbeamercolor*{enumerate item}{fg=jhu-medium}
-\setbeamercolor*{enumerate subitem}{fg=jhu-medium}
-\setbeamercolor*{enumerate subsubitem}{fg=jhu-medium}
-
-% Information to be included in the title page:
-\title{Presentation Title}
-\author[First Last]{First~Last}
-\date{Apr 20, 2022}
+\usepackage{jhu-beamer}
 
 \begin{document}
 
@@ -82,7 +18,11 @@
 
 \begin{frame}[t]
 \frametitle{Contents}
-Normal text. \textbf{Bold text.} \textbfb{Blue bold text.} \textit{Italic text.} \textitb{Blue italic text.}
+Normal text.
+
+\textbf{Bold text.} \textbfb{Blue bold text.}
+
+\textit{Italic text.} \textitb{Blue italic text.}
 \end{frame}
 
 \begin{frame}[t]
