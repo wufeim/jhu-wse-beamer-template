@@ -4,6 +4,6 @@ JHU WSE Beamer template for academic presentations. Figures and logos are from t
 
 ## Usage
 
-**Download Beamer template**: [github.com/wufeim/jhu-wse-beamer-template](https://github.com/wufeim/jhu-wse-beamer-template/releases/)
+**Download Beamer template**: [releases](https://github.com/wufeim/jhu-wse-beamer-template/releases/)
 
 **Install LaTex and Beamer**: [latex-beamer.com](https://latex-beamer.com/beamer-installation/)
