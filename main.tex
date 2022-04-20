@@ -1,12 +1,12 @@
 \documentclass[10pt,aspectratio=169]{beamer}
 \usepackage{jhu-beamer}
 
-\begin{document}
+% table font size
+\AtBeginEnvironment{tabular}{\normalsize}
+% caption font size
+\captionsetup{font=footnotesize}
 
-\setlength{\abovedisplayskip}{1pt}
-\setlength{\belowdisplayskip}{1pt}
-\setlength{\abovedisplayshortskip}{1pt}
-\setlength{\belowdisplayshortskip}{1pt}
+\begin{document}
 
 {
 \setbeamertemplate{headline}{}
@@ -16,8 +16,7 @@
 \end{frame}
 }
 
-\begin{frame}[t]
-\frametitle{Contents}
+\begin{frame}[t]{Texts}
 Normal text.
 
 \textbf{Bold text.} \textbfb{Blue bold text.}
@@ -25,8 +24,7 @@ Normal text.
 \textit{Italic text.} \textitb{Blue italic text.}
 \end{frame}
 
-\begin{frame}[t]
-\frametitle{Lists}
+\begin{frame}[t]{Lists}
 \textbf{Unordered list.}
 \begin{itemize}
     \item Item 1
@@ -49,13 +47,60 @@ Normal text.
 \end{enumerate}
 \end{frame}
 
+\begin{frame}[t]{Figures}
+\textbf{Figure.}
+\begin{figure}
+    \centering
+    \includegraphics[width=2cm]{example-image-a}
+    \caption{Image A.}
+    \label{fig:eg-a}
+\end{figure}
+\textbf{Multiple figures.}
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{2cm}
+    \centering
+    \includegraphics[width=\textwidth]{example-image-b}
+    \caption{Image B.}
+    \end{subfigure}
+    \hspace{.2in}
+    \begin{subfigure}[b]{2cm}
+    \centering
+    \includegraphics[width=\textwidth]{example-image-c}
+    \caption{Image C.}
+    \end{subfigure}
+    \caption{Image B and C.}
+\end{figure}
+\end{frame}
+
+\begin{frame}[t]{Tables}
+\textbf{Table.}
+\begin{table}
+    \centering
+    \begin{tabular}{c|cc}
+        \hline
+        \noalign{\smallskip}
+        column 1 & column 2 & column 3 \\
+        \noalign{\smallskip}
+        \hline
+        \noalign{\smallskip}
+        1 & 2 & 3 \\
+        4 & 5 & 6 \\
+        \noalign{\smallskip}
+        \hline
+    \end{tabular}
+    \caption{Table caption.}
+\end{table}
+\end{frame}
+
 \begin{frame}[t]
 \frametitle{References}
-\textbf{[1]} D. Patel and A. Oberai. "GAN priors for bayesian inference." In NeurIPS, 2019.
+% references are suggested to be alphabetized and in APA style.
+\textbf{[1]} Author, A. A. (Year). \textit{Title of book}. Publisher.
 
-\textbf{[2]} D. Patel and A. Oberai. "GAN-based priors for quantifying uncertainty". In arXiv, 2020.
+\textbf{[2]} Author, A. A. (Year). Title or article. \textit{Name of Periodical, volume(issue)}, \#-\#.
 
-\textbf{[3]} T. Karras, S. Laine, and T. Aila. "A style-based generator architecture for generative adversarial networks." In CVPR, 2019.
+\textbf{[3]} Author, A. A. (Year). Title or book chapter. In A. A. Editor \& B. B. Editor (Eds.), \textit{Title of book} (2nd ed, pp. \#-\#).
 \end{frame}
 
 {
